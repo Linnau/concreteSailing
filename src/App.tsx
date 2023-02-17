@@ -1,12 +1,15 @@
 import React from 'react';
-import ConcreteTopBar from './top/TopBar';
+import { WithTheme } from './shared/theme/theme';
+import Header from './header/Header';
+import { AppContent } from './content/AppContent';
 
 export function App(): JSX.Element {
 
   return (
-    <>
-      <ConcreteTopBar />
-    </>
+    <WithTheme>
+      <Header />
+      <AppContent />
+    </WithTheme>
   );
 }
 

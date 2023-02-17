@@ -1,17 +1,19 @@
 import React from 'react';
 import { StrictMode } from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 import './index.css';
-import { WithTheme } from './shared/theme/theme';
 // import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root')!);
+const container = document.getElementById('root');
+const root = createRoot(container!);
+
 root.render(
   <StrictMode>
-    <WithTheme>
-      <App />
-    </WithTheme>
+    <BrowserRouter>    
+      <App />    
+    </BrowserRouter>
   </StrictMode>
 );
 
