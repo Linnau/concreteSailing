@@ -3,7 +3,7 @@ import { blueGrey } from "@mui/material/colors";
 import React from "react";
 import { PropsWithChildren } from "react";
 
-export const HEADER_HEIGHT = "80px";
+export const HEADER_HEIGHT = "60px";
 
 const palette = {
     primary: {
